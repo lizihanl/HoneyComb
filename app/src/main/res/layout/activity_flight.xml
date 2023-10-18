@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Flight_Activity">
+
+    <TextView
+        android:id="@+id/Flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flight"
+        android:textSize="30sp"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/searchFlight"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/searchFlight"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:layout_below="@id/Flight"/>
+
+    <Button
+        android:id="@+id/searchFlightButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/search"
+        android:layout_toEndOf="@id/searchFlight"
+        android:layout_below="@id/Flight"/>
+
+
+</RelativeLayout>
